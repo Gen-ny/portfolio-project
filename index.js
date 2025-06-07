@@ -34,3 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   type();
 });
+
+
+window.addEventListener('load', () => {
+  const scroller = document.getElementById('scroll-container');
+  let scrollAmount = 0;
+
+  setInterval(() => {
+    if (scrollAmount >= scroller.scrollWidth - scroller.clientWidth) {
+      scrollAmount = 0; // Reset to start
+    } else {
+      scrollAmount += 1; // Pixels to scroll each tick
+    }
+    scroller.scrollLeft = scrollAmount;
+  }, 20); // Speed (lower = faster)
+});
