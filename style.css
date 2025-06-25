@@ -1,9 +1,8 @@
-
-.tab-links::after{
+.tab-links::after {
     content: '';
     position: absolute;
     width: 0;
-    height: px;
+    height: 3px; 
     background-color: #cc2217;
     bottom: -8px;
     left: 0;
@@ -11,20 +10,24 @@
     transition: transform 0.7s;
 }
 
+.tab-links.active-link::after {
+    width: 100%;
+    transform: scaleX(1);
+}
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    display: none;
 }
 
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

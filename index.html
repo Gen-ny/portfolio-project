@@ -5,56 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>portfolio</title>
+    <title>Genevieve's Portfolio</title>
     <script src="https://kit.fontawesome.com/0f035742a6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    
-
 </head>
 
 <body>
-    <header class="bg-[url(./images/bg-img.jpg)] bg-cover bg-center h-[100vh]">
+    <header class="bg-[url(./images/bg-img.jpg)] bg-cover bg-center h-[100vh] relative">
         <nav id="nav" class="bg-white shadow-md fixed w-full z-50">
-            <div class="bg-red-300 flex flex-row justify-between items-center h-[40px]">
-                <div class="flex justify-between items-center m-10 ml-150px gap-4">
-                    <a class="text-black text-[12px] m-2 hover:text-red-500 tracking-wider"
-                        href="https://www.linkedin.com/in/genevieve-appiah-2b8b4b1b8/"><i
+            <div
+                class="bg-red-300 flex flex-col md:flex-row justify-between items-center h-auto md:h-[40px] py-2 md:py-0 px-4">
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 mb-2 md:mb-0">
+                    <a class="text-black text-[12px] hover:text-red-500 tracking-wider"
+                        href="https://www.linkedin.com/in/genevieve-appiah-2b8b4b1b8/" aria-label="LinkedIn"><i
                             class="fa fa-linkedin"></i></a>
-
-                    <a class="text-black text-[12px] m-2 hover:text-red-500" href="https://github.com/Gen-ny"><i
-                            class="fa-brands fa-github"></i></a>
-
-                    <a class="text-black text-[12px] m-2 hover:text-red-500"
-                        href="https://plus.google.com/116898123456789012345"><i
+                    <a class="text-black text-[12px] hover:text-red-500" href="https://github.com/Gen-ny"
+                        aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a class="text-black text-[12px] hover:text-red-500"
+                        href="https://plus.google.com/116898123456789012345" aria-label="Google Plus"><i
                             class="fa-brands fa-google-plus-g"></i></a>
                 </div>
 
-                <div class="flex justify-between items-center text-black text-[12px] mr-30px">
-                    <di class="flex justify-between items-center m-4 text-[12px]">
-                        <a class="flex justify-between items-center m-4 text-[12px] gap-1"
-                            href="mailto:genevieveappia2@gmail.com">
-                            <i class="fa fa-envelope text-[12px]"></i>
-                            <p>genevieveappia2@gmail.com</p>
-                        </a>
-                </div>
-
-                <div class="flex justify-between items-center text-black text-[12px] mr-30px">
-                    <a class="flex justify-between items-center m-4 text-[12px] gap-1" href="tel:+233549828125">
+                <div
+                    class="flex flex-wrap justify-center md:justify-end items-center text-black text-[12px] gap-2 md:gap-4">
+                    <a class="flex items-center gap-1 text-[12px] hover:text-red-500"
+                        href="mailto:genevieveappia2@gmail.com">
+                        <i class="fa fa-envelope text-[12px]"></i>
+                        <p>genevieveappia2@gmail.com</p>
+                    </a>
+                    <a class="flex items-center gap-1 text-[12px] hover:text-red-500" href="tel:+233549828125">
                         <i class="fa fa-phone text-[12px]"></i>
                         <p>+233 549 828 125</p>
                     </a>
                 </div>
             </div>
 
-            <div class="flex justify-between items-center p-2 fixed w-full backdrop-blur-lg shadow-sm z-50 ">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center p-2 fixed w-full backdrop-blur-lg shadow-sm z-40 top-[auto] md:top-[40px]">
                 <div class="flex justify-between items-center m-4 p-0">
-                    <p class="text-red-500 hover:text-red-200 cursor-pointer italic font-semibold">GENE</p>
+                    <p class="text-red-500 hover:text-red-200 cursor-pointer italic font-semibold text-lg">GENE</p>
                 </div>
 
-                <div class="flex justify-between items-center text-black font-bold text-[12px] m-4 p-0 gap-10">
+                <div
+                    class="flex flex-wrap justify-center md:justify-end items-center text-black font-bold text-[12px] m-4 p-0 gap-4 md:gap-10">
                     <a class="hover:text-red-500" href="#index">Home</a>
                     <a class="hover:text-red-500" href="#about">About</a>
                     <a class="hover:text-red-500" href="#services">Services</a>
@@ -65,176 +60,211 @@
             </div>
         </nav>
         <section id="index">
-           <div class=" h-[100vh] text-white text-sans-serif ">
-                <div class="flex flex-col items-center justify-center h-full">
-                    <div>
-                        <h2 class="italic text-2xl mt-20 text-black text-center">Frontend Developer</h2>
-                        <h1 class="text-[50px] font-bold text-center"><span class="text-black font-medium">Hi</span> <span id="typewriter" class="italic text-red-500"></span>
-                        </h1>
-                    </div>
+            <div class="h-[100vh] text-white text-sans-serif flex flex-col items-center justify-center">
+                <div class="text-center mt-20">
+                    <h2 class="italic text-xl sm:text-2xl text-black text-center">Frontend Developer</h2>
+                    <h1 class="text-[30px] sm:text-[50px] font-bold text-center"><span
+                            class="text-black font-medium">Hi</span> <span id="typewriter"
+                            class="italic text-red-500"></span>
+                    </h1>
+                </div>
 
-                    <div class="p-8 flex flex-row items-center justify-center rounded-lg mt-[5rem]">
-                        <a class="text-white text-[20px]" href="./images/GENEVIEVE-APPIAH-FlowCV-Resume-20250527.pdf">
-                            <div><button
-                                class="bg-white text-red-500 items-center w-[100%] text-[20px] font-bold p-[12px] rounded-lg border-solid hover:bg-red-500 hover:text-white cursor-pointer mt-1 ">
-                                DOWNLOAD CV
-                            </button></div>
-                        </a>
-                    </div>
-
+                <div class="p-4 sm:p-8 flex items-center justify-center rounded-lg mt-8 sm:mt-[5rem]">
+                    <a class="text-white text-[16px] sm:text-[20px]"
+                        href="./images/GENEVIEVE-APPIAH-FlowCV-Resume-20250527.pdf" download>
+                        <button
+                            class="bg-white text-red-500 w-auto text-[16px] sm:text-[20px] font-bold p-[10px] sm:p-[12px] rounded-lg border-solid hover:bg-red-500 hover:text-white cursor-pointer">
+                            DOWNLOAD CV
+                        </button>
+                    </a>
                 </div>
             </div>
-            
         </section>
     </header>
 
-
-    <section id="about" class="w-full flex md:flex-row lg:items-center justify-center py-10">
-
-        <div class="w-[35%]">
+    <section id="about" class="w-full flex flex-col lg:flex-row items-center justify-center py-10 px-4 sm:px-6">
+        <div class="w-full lg:w-[35%] flex justify-center mb-8 lg:mb-0">
             <img src="./images/IMG_1446.JPG" alt="Portrait of the web developer"
-                class="w-[300px] h-auto rounded-lg shadow-md object-cover" />
+                class="w-[250px] h-auto rounded-lg shadow-md object-cover lg:w-[300px]" />
         </div>
 
-        <div class="w-[50%]">
-            <h1 class="font-bold text-2xl mb-4 text-red-500">About Me</h1>
-            <p class="w-[70%] text-gray-700 leading-relaxed">
+        <div class="w-full lg:w-[50%] text-center lg:text-left">
+            <h1 class="font-bold text-3xl mb-4 text-red-500">About Me</h1>
+            <p class="w-full lg:w-[70%] text-gray-700 leading-relaxed mx-auto lg:mx-0">
                 As a web developer, I bring digital ideas to life, crafting seamless and intuitive online experiences
                 that captivate users. With a passion for coding and a keen eye for design, I build websites and
                 applications that are not only visually stunning but also functional and user-friendly.
             </p>
 
-            <div class="tab-titles flex m-[20px] mt-[30px]">
-                <p class="w-[5%] mr-[50px] text-[18px] text-[500] cursor-pointer position-relative"
+            <div class="tab-titles flex justify-center lg:justify-start flex-wrap mt-8">
+                <p class="tab-links mr-4 md:mr-12 text-[16px] font-medium cursor-pointer relative active-link"
                     onclick="opentab(event, 'skills')">Skills</p>
-                <p class="tab-links mr-[50px] text-[18px] text-[500] cursor-pointer position-relative"
+                <p class="tab-links mr-4 md:mr-12 text-[16px] font-medium cursor-pointer relative"
                     onclick="opentab(event, 'experience')">Experience</p>
-                <p class="tab-links mr-[50px] text-[18px] text-[500] cursor-pointer position-relative"
+                <p class="tab-links mr-4 md:mr-12 text-[16px] font-medium cursor-pointer relative"
                     onclick="opentab(event, 'education')">Education</p>
-
-
             </div>
 
-            <div class="tab-contents active-tab block " id="skills">
+            <div class="tab-contents active-tab block mt-4 text-center lg:text-left" id="skills">
                 <ul>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">Frontend
-                            Development</span><br>Designing and Building websites using HTML, CSS, REACT,  Tailwind CSS
+                    <li class="list-none my-2"><span class="text-red-500 text-[14px] font-semibold">Frontend
+                            Development</span><br>Designing and Building websites using HTML, CSS, REACT, Tailwind CSS
                         and JavaScript</li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">Public Health
+                    <li class="list-none my-2"><span class="text-red-500 text-[14px] font-semibold">Public Health
                             Advocate</span><br>Advocating for health issues and promoting wellness
                         globally</li>
                 </ul>
             </div>
 
-            <div class="tab-contents" id="experience">
+            <div class="tab-contents mt-4 text-center lg:text-left" id="experience">
                 <ul>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">Present</span><br>Frontend Developer Trainee(MEST Africa)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">Present</span><br>Frontend Developer Trainee
+                        (MEST Africa)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">Present</span><br>Perinatal Death Audit
+                        Secretary (MCHH)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2024</span><br>Outreach Supervisor (Ghana
+                        Health Service) </li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2024-present</span><br>AFREhealth Advocate
                     </li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">Present</span><br>Perinatal
-                        Death Audit Secretary (MCHH)
-                    </li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2024</span><br>Outreach
-                        Supervisor (Ghana Health Service) </li>
-                    <li class="list-none m-[10px]"><span
-                            class="text-red-500 text-[14px]">2024-present</span><br>AFREhealth Advocate</li>
-                </ul>
-            </div> 
-
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2021-2024</span><br>Health Information Management (College Of Health And Well-Being-Kintampo)</li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2016-2019</span><br>WASSCE
-                        CERTIFICATE (Kumasi Wesley Girls' High School)</li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2024</span><br>Stripe Course
-                        for HIV/AIDs (AFREhealth)
-                    </li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2022</span><br>Malnutrition
-                        eLearning (University Of Southampton)</li>
-                    <li class="list-none m-[10px]"><span class="text-red-500 text-[14px]">2018</span><br>Cybersecurity
-                        (Cisco Network Academy)</li>
                 </ul>
             </div>
 
+            <div class="tab-contents mt-4 text-center lg:text-left" id="education">
+                <ul>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2021-2024</span><br>Health Information
+                        Management (College Of Health And Well-Being-Kintampo)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2016-2019</span><br>WASSCE CERTIFICATE
+                        (Kumasi Wesley Girls' High School)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2024</span><br>Stripe Course for HIV/AIDs
+                        (AFREhealth)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2022</span><br>Malnutrition eLearning
+                        (University Of Southampton)</li>
+                    <li class="list-none my-2"><span
+                            class="text-red-500 text-[14px] font-semibold">2018</span><br>Cybersecurity (Cisco Network
+                        Academy)</li>
+                </ul>
+            </div>
         </div>
-
-
-
     </section>
 
+    <section id="services" class="bg-white py-16 px-6">
+        <h2 class="text-center text-3xl sm:text-4xl font-bold text-red-600 mb-12">My Services</h2>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-8 md:gap-12 items-stretch flex-wrap">
 
-   
-  <section id="services" class="bg-white py-16 px-6">
-    <h2 class="text-center text-4xl font-bold text-red-600 mb-12">My Services</h2>
-    <div
-      class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-8 md:gap-12 items-stretch flex-wrap md:flex-nowrap">
+            <div
+                class="flex flex-col items-center p-6 sm:p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center w-full md:w-1/3 lg:w-1/4">
+                <i class="fas fa-code text-gray-700 text-4xl sm:text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Front-end Development</h3>
+                <p class="text-red-700 text-sm sm:text-base">Creating visually appealing and user-friendly interfaces
+                    using HTML, CSS, and JavaScript.
+                </p>
+            </div>
 
-      <div
-        class="flex flex-col items-center p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center max-w-xs">
-        <i class="fas fa-code text-gray-700 text-5xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Front-end Development</h3>
-        <p class="text-red-700">Creating visually appealing and user-friendly interfaces using HTML, CSS, and JavaScript.
-        </p>
-      </div>
+            <div
+                class="flex flex-col items-center p-6 sm:p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center w-full md:w-1/3 lg:w-1/4">
+                <i class="fas fa-mobile-alt text-gray-700 text-4xl sm:text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+                <p class="text-red-700 text-sm sm:text-base">Ensuring websites and applications are accessible and
+                    functional across various devices
+                    and screen sizes.</p>
+            </div>
 
-      <div
-        class="flex flex-col items-center p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center max-w-xs">
-        <i class="fas fa-mobile-alt text-gray-700 text-5xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
-        <p class="text-red-700">Ensuring websites and applications are accessible and functional across various devices
-          and screen sizes.</p>
-      </div>
-
-      <div
-        class="flex flex-col items-center p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center max-w-xs">
-        <i class="fas fa-brain text-gray-700 text-5xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Healthcare Integration</h3>
-        <p class="text-red-700">Leveraging technology to improve patient care and streamline healthcare processes.</p>
-      </div>
-
-    </div>
-  </section>
+            <div
+                class="flex flex-col items-center p-6 sm:p-8 border border-blue-300 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer bg-transparent hover:bg-blue-50 text-center w-full md:w-1/3 lg:w-1/4">
+                <i class="fas fa-brain text-gray-700 text-4xl sm:text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Healthcare Integration</h3>
+                <p class="text-red-700 text-sm sm:text-base">Leveraging technology to improve patient care and
+                    streamline healthcare processes.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="projects" class="bg-pink-200 py-16 px-6">
-        <h1 class="text-center text-4xl font-bold text-red-600 mb-12">PROJECTS</h1>
-        <div id="scroll-container" class="flex overflow-x-auto gap-8 space-x-4 scrollbar-hide h-full snap-x snap-mandatory px-4">
+        <h1 class="text-center text-3xl sm:text-4xl font-bold text-red-600 mb-12">PROJECTS</h1>
+        <div id="scroll-container"
+            class="flex overflow-x-auto gap-8 space-x-4 scrollbar-hide h-full snap-x snap-mandatory px-4 py-4">
 
-            <div class="flex-shrink-0 w-[300px] h-full bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://deluxe-hummingbird-3b37f3.netlify.app/"><img class="h-auto w-auto  rounded"  src="./images/pro6.png" alt="product1"></a>
-            
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://deluxe-hummingbird-3b37f3.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro6.png" alt="Project 1">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Online Bookstore</h3>
+                        <p class="text-gray-600 text-sm">A platform for users to browse and purchase books online.</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="flex-shrink-0 w-[300px] h-full bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://demo-ashy-ten.vercel.app/"><img class="h-auto w-auto  rounded"  src="./images/pro1.png" alt="product1"></a>
-            
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://demo-ashy-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro1.png" alt="Project 2">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Health Facility Website</h3>
+                        <p class="text-gray-600 text-sm">A modern and user-friendly website designed for a health facility, enabling patients to access information, book appointments, and connect with healthcare services seamlessly.</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="flex-shrink-0 w-[300px] h-full bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://fabulous-marigold-432690.netlify.app/"><img class="h-auto w-auto  rounded"  src="./images/pro3.png" alt="product3"></a>
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://fabulous-marigold-432690.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro3.png" alt="Project 3">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Event Management System</h3>
+                        <p class="text-gray-600 text-sm">A comprehensive platform for managing events, including registration, ticketing, and attendee engagement.</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="flex-shrink-0 w-[300px] h-full  bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://food-drinks-f29t.vercel.app/"><img class="h-auto w-auto  rounded"  src="./images/pro2.png" alt="product2"></a>
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://food-drinks-f29t.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro2.png" alt="Project 4">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Restaurant Website</h3>
+                        <p class="text-gray-600 text-sm">A modern and user-friendly website designed for a restaurant, enabling customers to view the menu, make reservations, and order food online.</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="flex-shrink-0 w-[300px] h-full bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://tf-conditional-statement.vercel.app/"><img class="h-auto w-auto rounded"  src="./images/pro4.png" alt="product4"></a>
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://tf-conditional-statement.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro4.png" alt="Project 5">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Java Conditional Statement</h3>
+                        <p class="text-gray-600 text-sm">A project demonstrating the use of conditional statements in Java.</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="flex-shrink-0 w-[300px] h-full bg-white rounded-lg shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out">
-                <a href="https://authentication-lime-mu.vercel.app/"><img class="h-auto w-auto  rounded"  src="./images/pro5.png" alt="product5"></a>
+            <div
+                class="flex-shrink-0 w-[280px] sm:w-[300px] h-auto bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://authentication-lime-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full h-48 object-cover rounded" src="./images/pro5.png" alt="Project 6">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">User Authentication System</h3>
+                        <p class="text-gray-600 text-sm">A secure user authentication system built with modern web technologies.</p>
+                    </div>
+                </a>
             </div>
-
         </div>
-        
-    
     </section>
 
 
-
-    <div id="blog" class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-4 sm:px-8">
-        <div class="flex items-center bg-white  rounded-sm overflow-hidden shadow">
-            <div class="p-4 bg-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div id="blog" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 mt-8 sm:px-8 max-w-7xl mx-auto">
+        <div class="flex items-center bg-white rounded-sm overflow-hidden shadow p-4">
+            <div class="p-4 bg-green-400 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
                     </path>
@@ -244,8 +274,8 @@
                 <p class="text-3xl">100+</p>
             </div>
         </div>
-        <div class="flex items-center bg-white  rounded-sm overflow-hidden shadow">
-            <div class="p-4 bg-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white"
+        <div class="flex items-center bg-white rounded-sm overflow-hidden shadow p-4">
+            <div class="p-4 bg-blue-400 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2">
@@ -256,11 +286,11 @@
                 <p class="text-3xl">25</p>
             </div>
         </div>
-        <div class="flex items-center bg-white  rounded-sm overflow-hidden shadow">
-            <div class="p-4 bg-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex items-center bg-white rounded-sm overflow-hidden shadow p-4">
+            <div class="p-4 bg-indigo-400 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z">
+                        d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 002-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z">
                     </path>
                 </svg></div>
             <div class="px-4 text-gray-700">
@@ -268,9 +298,9 @@
                 <p class="text-3xl">334</p>
             </div>
         </div>
-        <div class="flex items-center bg-white  rounded-sm overflow-hidden shadow">
-            <div class="p-4 bg-red-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex items-center bg-white rounded-sm overflow-hidden shadow p-4">
+            <div class="p-4 bg-red-400 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
                     </path>
@@ -283,74 +313,81 @@
     </div>
 
 
-    <section class="bg-gray-300 p-8 mt-8" h-[100%]>
-        <div class="text-center mb-10">
-            <h1 class="text-xl font-semibold">Do you Have any Project?</h1>
-            <p class="mt-2">Do you have any projects you're currently working on or planning to start? I'd love to
-                collaborate or
-                help out!</p>
-            <a href="https://wa.me/233549828125"><button
-                    class="bg-red-300 text-white px-4 py-2 rounded mt-8 hover:bg-red-400">Contact Us</button></a>
+    <section class="bg-gray-300 p-8 mt-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-2xl sm:text-3xl font-semibold">Do you Have any Project?</h1>
+            <p class="mt-4 text-base sm:text-lg">Do you have any projects you're currently working on or planning to
+                start? I'd love to collaborate or help out!</p>
+            <a href="https://wa.me/233549828125" target="_blank" rel="noopener noreferrer">
+                <button class="bg-red-300 text-white px-6 py-3 rounded-lg mt-8 hover:bg-red-400 text-lg font-medium">
+                    Contact Us
+                </button>
+            </a>
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-gray-300">
-        <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Branding -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
                 <div>
-                    <p class="mt-2 text-sm text-gray-400">
+                    <h3 class="text-lg font-semibold text-white tracking-wider uppercase mb-2">Genevieve Appiah</h3>
+                    <p class="text-sm text-gray-400">
                         Front-end Developer | Portfolio
                     </p>
                 </div>
 
-                <!-- Navigation -->
                 <div>
-                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Navigation</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#about" class="hover:text-white">About</a></li>
-                        <li><a href="#projects" class="hover:text-white">Projects</a></li>
-                        <li><a href="#skills" class="hover:text-white">Skills</a></li>
-                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors duration-300">Projects</a>
+                        </li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a>
+                        </li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
                 <div>
-                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Contact</h3>
-                    <ul class="mt-4 space-y-2 text-sm">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm">
                         <li>Email: <a href="mailto:genevieveappia2@gmail.com"
-                                class="hover:text-white">genevieveappia2@gmail.com</a></li>
-                        <li>Phone: <a href="tel:+233549828125" class="hover:text-white">+233 549 828 125</a></li>
+                                class="hover:text-white transition-colors duration-300">genevieveappia2@gmail.com</a>
+                        </li>
+                        <li>Phone: <a href="tel:+233549828125"
+                                class="hover:text-white transition-colors duration-300">+233
+                                549 828 125</a></li>
                         <li>Location: Accra, Ghana</li>
                     </ul>
                 </div>
 
-                <!-- Social Media -->
                 <div>
-                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Follow Me</h3>
-                    <div class="mt-4 flex space-x-4">
-                        <a href="https://github.com/Gen-ny" class="hover:text-white" aria-label="GitHub">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Follow Me</h3>
+                    <div class="flex justify-center sm:justify-start space-x-4">
+                        <a href="https://github.com/Gen-ny" class="hover:text-white transition-colors duration-300"
+                            aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/genevieve-appiah-2b8b4b1b8/" class="hover:text-white"
-                            aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/genevieve-appiah-2b8b4b1b8/"
+                            class="hover:text-white transition-colors duration-300" aria-label="LinkedIn"
+                            target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="https://twitter.com/GenevieveAppia" class="hover:text-white" aria-label="Twitter">
+                        <a href="https://twitter.com/GenevieveAppia"
+                            class="hover:text-white transition-colors duration-300" aria-label="Twitter" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-twitter fa-lg"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Divider -->
             <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
                 © 2025 Genevieve Appiah. All rights reserved.
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
