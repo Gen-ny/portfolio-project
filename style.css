@@ -1,3 +1,11 @@
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(35, 71, 126);
+}
+
 .tab-links::after {
     content: '';
     position: absolute;
@@ -30,4 +38,10 @@
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
 }
